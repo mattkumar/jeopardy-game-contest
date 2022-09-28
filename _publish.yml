@@ -1,0 +1,4 @@
+- source: jeopardy-game-contest.qmd
+  quarto-pub:
+    - id: 59fb6575-c1d6-4b9d-bfa2-d1c81214fd4b
+      url: 'https://quartopub.com/sites/mattkumar/jeopardy-game-contest'

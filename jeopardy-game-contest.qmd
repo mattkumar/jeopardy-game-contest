@@ -1,0 +1,100 @@
+---
+title: "Jeopardy!"
+author: "Matthew Kumar"
+theme: custom.scss
+---
+
+:::{.column-page}
+## About
+<p class = "p2">This project uses reactable and scss to create a board from the game Jeopardy! <em><strong>Hovering</strong></em> over a card will cause it to flip and reveal the clue for that category and value. The answer to each clue may be also viewed on the back of each card.</p>
+
+## Data
+<p class = "p2">Below is a faithful recreation of the game board presented in round 1 on Sept 20, 2019. It was created programmatically from data retrieved using the [whatr](https://github.com/kiernann/whatr) package.</p>
+
+## Game
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+# Libraries
+library(tidyverse)
+library(reactable)
+library(whatr)
+library(htmltools)
+
+# Get raw game data
+# -specify the game date, game round, and keep relevant vars
+raw_data <- whatr_html("2019-09-20") %>%
+  whatr_board() %>%
+  filter(round == 1) %>%
+  select(col, row, category, clue, answer)
+
+# Process raw game data
+# - concatenate clue and answer so I can use it down stream
+# - this allows me to do the next step (transform processed data) with ease
+processed_data <- raw_data %>%
+  mutate(content = glue::glue("{clue};{answer}"))
+
+# Transform processed data
+# -put content in the correct tile position on the board
+# -add in column names
+table_data <- matrix(processed_data$content, nrow = 5, ncol = 6)
+colnames(table_data) <- unique(processed_data$category)
+
+# Set reactable options
+options(reactable.theme = reactableTheme(
+  color = "hsl(233, 9%, 87%)",
+  backgroundColor = "hsl(233, 9%, 19%)",
+  borderColor = "hsl(233, 9%, 22%)"
+))
+
+# Display
+reactable(table_data,
+  sortable = FALSE,
+  defaultColDef = colDef(
+    html = TRUE,
+    align = "center",
+    # Header Rendering
+    header = function(value) {
+      tags$div(
+        class = "flip-card flip-card-head",
+        value
+      )
+    },
+    # Cell Rendering
+    cell = function(value, index) {
+      # parse clue, answer from table cell
+      content <- str_split(value, ";", simplify = TRUE)
+      clue <- content[1]
+      answer <- content[2]
+      # cell content
+      tags$div(
+        class = "flip-card",
+        tags$div(
+          class = "flip-card-inner",
+          tags$div(
+            class = "flip-card-front",
+            # multiply row index by 200 for tile value
+            paste("$", index * 200)
+          ),
+          tags$div(
+            class = "flip-card-back",
+            clue,
+            tags$details(
+              tags$summary("Answer"),
+              answer
+            )
+          )
+        )
+      )
+    }
+  )
+)
+```
+
+## Future
+<p>It should be relatively straightforward to include your own <em>own</em> content (i.e. values, clues and answers) in a data frame and have it run with the current workflow.</p>
+
+<strong>Enjoy!</strong>
+:::

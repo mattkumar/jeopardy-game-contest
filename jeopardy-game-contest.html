@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Matthew Kumar">
+
+<title>Jeopardy!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="jeopardy-game-contest_files/libs/clipboard/clipboard.min.js"></script>
+<script src="jeopardy-game-contest_files/libs/quarto-html/quarto.js"></script>
+<script src="jeopardy-game-contest_files/libs/quarto-html/popper.min.js"></script>
+<script src="jeopardy-game-contest_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="jeopardy-game-contest_files/libs/quarto-html/anchor.min.js"></script>
+<link href="jeopardy-game-contest_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="jeopardy-game-contest_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="jeopardy-game-contest_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="jeopardy-game-contest_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="jeopardy-game-contest_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+<script src="jeopardy-game-contest_files/libs/core-js-2.5.3/shim.min.js"></script>
+<script src="jeopardy-game-contest_files/libs/react-17.0.0/react.min.js"></script>
+<script src="jeopardy-game-contest_files/libs/react-17.0.0/react-dom.min.js"></script>
+<script src="jeopardy-game-contest_files/libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="jeopardy-game-contest_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="jeopardy-game-contest_files/libs/reactable-binding-0.3.0/reactable.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Jeopardy!</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Matthew Kumar </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<div class="column-page">
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p class="p2">
+This project uses reactable and scss to create a board from the game Jeopardy! <em><strong>Hovering</strong></em> over a card will cause it to flip and reveal the clue for that category and value. The answer to each clue may be also viewed on the back of each card.
+</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p class="p2">
+Below is a faithful recreation of the game board presented in round 1 on Sept 20, 2019. It was created programmatically from data retrieved using the <a href="https://github.com/kiernann/whatr">whatr</a> package.
+</p>
+</section>
+<section id="game" class="level2">
+<h2 class="anchored" data-anchor-id="game">Game</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="htmlwidget-b47f989fd31d814109a8" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b47f989fd31d814109a8">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"2019 Movies":["Arcade Fire Performs The Song 'Baby Mine' During The End Credits Of This Tim Burton Film Based On A Disney Cartoon;Dumbo","Tyler Perry Said This Woman's 'Family Funeral' Would Be The Last Time He Plays The Iconic Character;Madea","Don't Let The Sun Go Down On 2019 Without Seeing This Biopic In Which Jamie Bell Plays Bernie Taupin;Rocketman","Ryan Reynolds Gave Voice To The Little Yellow Guy In 'Pokémon Detective' Him;Pikachu","In 'The Upside', A Remake Of A French Film, Kevin Hart Cares For A Quadriplegic Man Played By This Actor;Bryan Cranston"],"The Tech World":["In 1991 'Alice's Adventures In Wonderland' Became The First Work Of Fiction Turned Into This Format;Ebook","In 2018 Microsoft Unveiled Its All Access Program That Allowed Gamers To Get This Console On A Rent-To-Own Basis;Xbox","The Icon Seen Here Represents This Adobe Software;Acrobat","Before This Apple Program Was Released In 2003, Engineers Jokingly Referred To It As Ibrowse;Safari","News Of Another 10 Million Or So Hacked Accounts Might Have You Paraphrase Shakespeare & Say, 'Once More Unto The Data' This;Breach"],"Trial Of The Century":["Sacco & Vanzetti Trial;20th Century","Salem Witch Trials;17th","Amistad Mutiny Trial;19th","Trial Of Thomas More;16th","Heresy Trial Of Joan Of Arc;15th Century"],"2-Word Alliteration":["To Have This Guffaw Is To Gain Satisfaction & Final Vindication;Last Laugh","This Fish Can Pack Quite A Punch, Stunning Its Prey With Up To 600 Volts;Electric Eel","It's Something That Personally Annoys You, Not Fluffy Or Fido;Pet Peeve","Powerful Influence From Your Equals To Act In A Way Acceptable To Them;Peer Pressure","Alliterative Phrase For A Situation That Seems Okay But Is 'Inclined' To Gradually Lead To A Bad Outcome;Slippery Slope"],"Fabrics":["Chiffe, A French Word For An Old Rag, Gave Us This Word For An Elegant, Often Sheer Fabric;Chiffon","Duck Cloth & Sailcloth Are Types Of This Strong, Plain Weave Fabric Usually Made Of Cotton;Canvas","Linen, One Of The Oldest Fabrics Made By Humans, Comes From The Fiber Of This Plant With A Four-Letter Name;Flax","The Harris Variety Of This Fabric Is Derived From Yarns Hand-Woven On Islands Off The Coast Of Scotland;Tweed","In 'Sunset BlvD.' William Holden Is Told, 'As Long As The Lady Is Paying For It, Why Not' A Coat Of This Llama & Alpaca Relative;Vicuna"],"Chiefs Of State":["Title Of Japan's Head Of State; Naruhito Is The 126th;Emperor","Like The U.S., Italy Chooses Its President By This 2-Word Body, But Italy's Is Mostly Members Of Parliament;Electoral College","This Mideast Country Is Run By A Supreme Leader Appointed For Life By An Islamic Group Called The Assembly Of Experts;Iran","In 2019 Andry Rajoelina Was The 1st Elected PreS. In The History Of This Indian Ocean Island To Succeed Another Elected President;Madagascar","This Position Is Not Only For Commonwealth Nations--Alfonso Boekhoudt Reps King Willem-Alexander In Aruba;Governor General"]},"columns":[{"accessor":"2019 Movies","name":"2019 Movies","type":"character","cell":[{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 200"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Arcade Fire Performs The Song 'Baby Mine' During The End Credits Of This Tim Burton Film Based On A Disney Cartoon",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Dumbo"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 400"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Tyler Perry Said This Woman's 'Family Funeral' Would Be The Last Time He Plays The Iconic Character",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Madea"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 600"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Don't Let The Sun Go Down On 2019 Without Seeing This Biopic In Which Jamie Bell Plays Bernie Taupin",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Rocketman"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 800"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Ryan Reynolds Gave Voice To The Little Yellow Guy In 'Pokémon Detective' Him",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Pikachu"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 1000"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["In 'The Upside', A Remake Of A French Film, Kevin Hart Cares For A Quadriplegic Man Played By This Actor",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Bryan Cranston"]}]}]}]}],"header":{"name":"div","attribs":{"className":"flip-card flip-card-head"},"children":["2019 Movies"]},"html":true,"align":"center"},{"accessor":"The Tech World","name":"The Tech World","type":"character","cell":[{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 200"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["In 1991 'Alice's Adventures In Wonderland' Became The First Work Of Fiction Turned Into This Format",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Ebook"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 400"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["In 2018 Microsoft Unveiled Its All Access Program That Allowed Gamers To Get This Console On A Rent-To-Own Basis",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Xbox"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 600"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["The Icon Seen Here Represents This Adobe Software",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Acrobat"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 800"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Before This Apple Program Was Released In 2003, Engineers Jokingly Referred To It As Ibrowse",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Safari"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 1000"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["News Of Another 10 Million Or So Hacked Accounts Might Have You Paraphrase Shakespeare & Say, 'Once More Unto The Data' This",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Breach"]}]}]}]}],"header":{"name":"div","attribs":{"className":"flip-card flip-card-head"},"children":["The Tech World"]},"html":true,"align":"center"},{"accessor":"Trial Of The Century","name":"Trial Of The Century","type":"character","cell":[{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 200"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Sacco & Vanzetti Trial",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"20th Century"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 400"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Salem Witch Trials",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"17th"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 600"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Amistad Mutiny Trial",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"19th"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 800"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Trial Of Thomas More",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"16th"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 1000"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Heresy Trial Of Joan Of Arc",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"15th Century"]}]}]}]}],"header":{"name":"div","attribs":{"className":"flip-card flip-card-head"},"children":["Trial Of The Century"]},"html":true,"align":"center"},{"accessor":"2-Word Alliteration","name":"2-Word Alliteration","type":"character","cell":[{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 200"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["To Have This Guffaw Is To Gain Satisfaction & Final Vindication",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Last Laugh"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 400"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["This Fish Can Pack Quite A Punch, Stunning Its Prey With Up To 600 Volts",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Electric Eel"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 600"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["It's Something That Personally Annoys You, Not Fluffy Or Fido",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Pet Peeve"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 800"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Powerful Influence From Your Equals To Act In A Way Acceptable To Them",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Peer Pressure"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 1000"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Alliterative Phrase For A Situation That Seems Okay But Is 'Inclined' To Gradually Lead To A Bad Outcome",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Slippery Slope"]}]}]}]}],"header":{"name":"div","attribs":{"className":"flip-card flip-card-head"},"children":["2-Word Alliteration"]},"html":true,"align":"center"},{"accessor":"Fabrics","name":"Fabrics","type":"character","cell":[{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 200"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Chiffe, A French Word For An Old Rag, Gave Us This Word For An Elegant, Often Sheer Fabric",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Chiffon"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 400"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Duck Cloth & Sailcloth Are Types Of This Strong, Plain Weave Fabric Usually Made Of Cotton",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Canvas"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 600"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Linen, One Of The Oldest Fabrics Made By Humans, Comes From The Fiber Of This Plant With A Four-Letter Name",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Flax"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 800"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["The Harris Variety Of This Fabric Is Derived From Yarns Hand-Woven On Islands Off The Coast Of Scotland",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Tweed"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 1000"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["In 'Sunset BlvD.' William Holden Is Told, 'As Long As The Lady Is Paying For It, Why Not' A Coat Of This Llama & Alpaca Relative",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Vicuna"]}]}]}]}],"header":{"name":"div","attribs":{"className":"flip-card flip-card-head"},"children":["Fabrics"]},"html":true,"align":"center"},{"accessor":"Chiefs Of State","name":"Chiefs Of State","type":"character","cell":[{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 200"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Title Of Japan's Head Of State",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]}," Naruhito Is The 126th"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 400"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["Like The U.S., Italy Chooses Its President By This 2-Word Body, But Italy's Is Mostly Members Of Parliament",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Electoral College"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 600"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["This Mideast Country Is Run By A Supreme Leader Appointed For Life By An Islamic Group Called The Assembly Of Experts",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Iran"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 800"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["In 2019 Andry Rajoelina Was The 1st Elected PreS. In The History Of This Indian Ocean Island To Succeed Another Elected President",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Madagascar"]}]}]}]},{"name":"div","attribs":{"className":"flip-card"},"children":[{"name":"div","attribs":{"className":"flip-card-inner"},"children":[{"name":"div","attribs":{"className":"flip-card-front"},"children":["$ 1000"]},{"name":"div","attribs":{"className":"flip-card-back"},"children":["This Position Is Not Only For Commonwealth Nations--Alfonso Boekhoudt Reps King Willem-Alexander In Aruba",{"name":"details","attribs":{},"children":[{"name":"summary","attribs":{},"children":["Answer"]},"Governor General"]}]}]}]}],"header":{"name":"div","attribs":{"className":"flip-card flip-card-head"},"children":["Chiefs Of State"]},"html":true,"align":"center"}],"sortable":false,"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 22%)"},"dataKey":"86b6b5c4d205678e4621941007122a09"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="future" class="level2">
+<h2 class="anchored" data-anchor-id="future">Future</h2>
+<p>
+It should be relatively straightforward to include your own <em>own</em> content (i.e.&nbsp;values, clues and answers) in a data frame and have it run with the current workflow.
+</p>
+<p><strong>Enjoy!</strong></p>
+</section>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,121 @@
+/*-- scss:rules --*/
+
+/* Font to be used in the display of the numeric tile values*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Font to be used in the display of clues on the back of each tile*/
+@font-face {
+    font-family: 'ITC Korinna Std';
+    font-style: normal;
+    font-weight: 700;
+    src: local('ITC Korinna Std'), url('ITC Korinna Std Bold.woff') format('woff');
+}
+
+/* Font to be used for plain text of the .qmd */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+/* Font to be used throughout various headings of the .qmd*/
+@font-face {
+    font-family: 'Gyparody Rg';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gyparody Rg'), url('gyparody rg.woff') format('woff');
+} 
+
+
+/* Flip card tile css */
+/* Modified from: https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  line-height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #031070;
+  color: #D69F4C;
+  font-family: 'Alfa Slab One', cursive;
+  text-shadow: 4px 3px black;
+  font-size: 200%;
+}
+
+.flip-card-back {
+  padding-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #050BE1;
+  color: white;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'ITC Korinna Std', sans-serif;
+  text-shadow: 2px 2px black;
+  transform: rotateY(180deg);
+  font-size: 60%;
+}
+
+.flip-card-head {
+  line-height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  background: url('images.jfif');
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  font-family: 'Alfa Slab One', cursive;
+  text-shadow: 4px 3px black;
+  font-size: 60%;
+}
+
+/* Formatting of the reactable table cells */
+.rt-td-inner:active,.rt-td-inner:hover {
+  background-color: #D69F4C !important; 
+}
+
+/* Formatting of the body */
+body {
+ background-color: hsl(233, 9%, 19%);
+ color: #D69F4C;
+ zoom: 110%;
+ font-family: 'Inconsolata', monospace;
+}
+
+/* Formatting of h1, h2 */
+h1, h2 {
+ text-shadow: 2px 2px white;
+ font-family: 'Gyparody Rg', sans-serif;
+}
+
+/* Additional formatting of h1 */
+h1 {
+ text-align: center;
+ font-size: 900%;  
+}
+
+/* Formatting of meta contents */
+.quarto-title-meta-contents > p{
+  font-family: 'Alfa Slab One', cursive !important;
+}
