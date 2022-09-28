@@ -7,7 +7,7 @@ This is my entry into the [R Studio 2022 Table Contest.](https://www.rstudio.com
 You may view it [here.](https://mattkumar.quarto.pub/jeopardy-game-contest/)
 
 ## Aims
-My aims for this project were two-fold:
+My aims for this project were three-fold:
 
 1. To think about creative uses of tables! I'm not a particular fan of Jeopardy!, but this stood out when I was trying to think of things that are tabular/rectangle in nature.
 
