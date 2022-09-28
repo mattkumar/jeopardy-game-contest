@@ -16,7 +16,7 @@ My aims for this project were three-fold:
 3. Continue to investigate and experiment (s)css and Quarto.
 
 ## Data
-Data for the table are retrieved pragmatically using the `whatr` package. See [here](https://github.com/kiernann/whatr) more for details.
+Data for the table are retrieved programmatically using the `whatr` package. See [here](https://github.com/kiernann/whatr) more for details.
 
 ## Features
 The table is a faithful recreation (i.e. each cell is in the identical position it was when it aired on TV). Upon hovering on a given cell, the content will flip to provide a clue. Optionally, you can view the answer associated with this clue.
